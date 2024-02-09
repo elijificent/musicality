@@ -10,3 +10,10 @@ save-requirements:
 
 format:
 	black src
+
+twinkles:
+	python -m src.musicxml.notes
+
+.PHONY: clean
+clean:
+	rm sample_files/twinkles/*.musicxml
